@@ -1,69 +1,115 @@
 # 📰 Fake News Detection using Machine Learning
 
-## 📌 Project Overview
-This project builds a Machine Learning model that classifies news headlines as **Real or Fake** using Natural Language Processing (NLP) techniques. It analyzes textual patterns and predicts authenticity automatically.
+## 📌 Overview
+
+This project implements a Machine Learning–based system that automatically classifies news headlines as **Real** or **Fake** using Natural Language Processing (NLP) techniques. The goal is to detect misleading information and demonstrate how text classification models can be applied to real-world problems.
 
 ---
 
 ## 🎯 Objective
-To detect misleading or false news headlines using supervised machine learning and text processing methods.
+
+To build an end-to-end machine learning pipeline that:
+
+* preprocesses textual news data
+* converts text into numerical features
+* trains a classification model
+* predicts whether news is real or fake
 
 ---
 
 ## 🧠 Model Used
-- Logistic Regression
+
+* Logistic Regression (primary model)
 
 ---
 
 ## ⚙️ Technologies & Libraries
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK
-- TF-IDF Vectorizer
-- Matplotlib
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* NLTK
+* TF-IDF Vectorizer
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Workflow
+
+```
+Dataset → Text Cleaning → Stopword Removal → Vectorization (TF-IDF)
+→ Train/Test Split → Model Training → Prediction → Evaluation
+```
 
 ---
 
 ## 📊 Results
-The model achieved approximately **83% accuracy** on unseen test data, showing reliable performance for headline-based fake news classification.
 
----
+The model achieved approximately:
 
-## ▶️ How to Run Project
+**Accuracy: ~82.8%**
 
-### Step 1 — Install Dependencies
-
-### Step 2 — Run Notebook
-Open and run:
-
+This demonstrates reliable performance for headline-based fake news classification using classical machine learning methods.
 
 ---
 
 ## 📁 Dataset
-Dataset used contains news headlines and labels indicating whether news is real or fake.
 
+The dataset contains:
 
+* news headlines
+* metadata
+* label indicating whether news is real or fake
+
+*(Dataset source can be added here if public link is available.)*
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 2️⃣ Run Notebook
+
+Open and run:
+
+```
+fake_news_detection.ipynb
+```
 
 ---
 
 ## 🚀 Future Improvements
-- Try Naive Bayes and SVM models
-- Use full article text instead of headlines
-- Deploy as web application
-- Improve accuracy with hyperparameter tuning
+
+* Compare multiple models (Naive Bayes, SVM, Random Forest)
+* Train on full news articles instead of headlines
+* Hyperparameter tuning
+* Deploy as a web app interface
+* Use deep learning NLP models (LSTM/BERT)
+
+---
+
+## 💡 Key Learning Outcomes
+
+* Text preprocessing techniques
+* Feature extraction using TF-IDF
+* Training supervised ML models
+* Evaluating classification performance
+* Building reproducible ML pipelines
 
 ---
 
 ## 👩‍💻 Author
+
 **Deepthi**
 
 ---
 
 ## ⭐ Project Purpose
-Built as part of self-learning journey in Machine Learning and NLP to strengthen practical skills for internships and placements.
+
+This project was developed as part of a self-learning journey in **Machine Learning and NLP** to strengthen practical skills for internships, research programs, and real-world applications.
+ of self-learning journey in Machine Learning and NLP to strengthen practical skills for internships and placements.
