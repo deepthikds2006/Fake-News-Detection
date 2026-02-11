@@ -61,7 +61,6 @@ The dataset contains:
 * metadata
 * label indicating whether news is real or fake
 
-*(Dataset source can be added here if public link is available.)*
 
 ---
 
