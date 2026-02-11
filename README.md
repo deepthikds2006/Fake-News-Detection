@@ -18,4 +18,4 @@ Achieved 90% accuracy on test data.
 Open notebook and run all cells.
 
 ## Author
-Your Name
+K.D.S.Deepthi
