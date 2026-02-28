@@ -17,9 +17,10 @@ To build an end-to-end machine learning pipeline that:
 
 ---
 
-## 🧠 Model Used
-
-* Logistic Regression (primary model)
+## 🧠 Models Implemented
+- Logistic Regression
+- Multinomial Naive Bayes
+- Linear Support Vector Machine (SVM)
 
 ---
 
@@ -83,27 +84,19 @@ fake_news_detection.ipynb
 ---
 
 ## 🚀 Future Improvements
+- Hyperparameter tuning
+- Training on full article content
+- Deep learning models (LSTM, Transformers)
+- Web app deployment for real-time detection
 
-* Compare multiple models (Naive Bayes, SVM, Random Forest)
-* Train on full news articles instead of headlines
-* Hyperparameter tuning
-* Deploy as a web app interface
-* Use deep learning NLP models (LSTM/BERT)
+## 💡 Learning Outcomes
+This project demonstrates practical understanding of:
+- NLP preprocessing
+- Feature engineering
+- Supervised learning algorithms
+- Model comparison
+- Performance evaluation
 
----
-
-## 💡 Key Learning Outcomes
-
-* Text preprocessing techniques
-* Feature extraction using TF-IDF
-* Training supervised ML models
-* Evaluating classification performance
-* Building reproducible ML pipelines
-
----
-
-## Conclusion
-*This model can be extended with deep learning architectures such as LSTM or BERT for improved performance.
 
 ## 👩‍💻 Author
 
