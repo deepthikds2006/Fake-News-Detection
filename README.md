@@ -102,6 +102,9 @@ fake_news_detection.ipynb
 
 ---
 
+## Conclusion
+*This model can be extended with deep learning architectures such as LSTM or BERT for improved performance.
+
 ## 👩‍💻 Author
 
 **Deepthi**
