@@ -1,110 +1,157 @@
-# 📰 Fake News Detection using Machine Learning
+# 📰 Fake News Detection using NLP and Machine Learning
 
-## 📌 Overview
+A Fake News Detection web application built using **Natural Language Processing (NLP)**, **TF-IDF Vectorization**, **Multinomial Naive Bayes**, and **Streamlit**.
 
-This project implements a Machine Learning–based system that automatically classifies news headlines as **Real** or **Fake** using Natural Language Processing (NLP) techniques. The goal is to detect misleading information and demonstrate how text classification models can be applied to real-world problems.
-
----
-
-## 🎯 Objective
-
-To build an end-to-end machine learning pipeline that:
-
-* preprocesses textual news data
-* converts text into numerical features
-* trains a classification model
-* predicts whether news is real or fake
+The model classifies news articles as **Real** or **Fake** based on the text content entered by the user.
 
 ---
 
-## 🧠 Models Implemented
-- Logistic Regression
-- Multinomial Naive Bayes
-- Linear Support Vector Machine (SVM)
+## 🚀 Features
+
+✅ News article classification (Fake / Real)  
+✅ NLP text preprocessing  
+✅ Stopword removal and stemming  
+✅ TF-IDF vectorization  
+✅ Multinomial Naive Bayes model  
+✅ Probability score output  
+✅ Interactive Streamlit web interface  
 
 ---
 
-## ⚙️ Technologies & Libraries
+## 🛠 Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* NLTK
-* TF-IDF Vectorizer
+- Python  
+- Pandas  
+- NLTK  
+- Scikit-learn  
+- Streamlit  
+- Pickle  
 
 ---
 
-## 🔄 Workflow
+## 📂 Project Structure
 
+```text
+Fake-News-Detection/
+│── app.py                 # Streamlit application
+│── model.pkl              # Trained model
+│── vectorizer.pkl         # TF-IDF vectorizer
+│── Fake news Detector.ipynb
+│── requirements.txt
+│── README.md
 ```
-Dataset → Text Cleaning → Stopword Removal → Vectorization (TF-IDF)
-→ Train/Test Split → Model Training → Prediction → Evaluation
+
+---
+
+## ⚙️ Project Workflow
+
+### 1. Data Collection
+- Load fake and real news datasets
+- Assign labels:
+  - Fake = 0
+  - Real = 1
+
+### 2. Data Preprocessing
+- Convert text to lowercase
+- Remove special characters
+- Remove stopwords
+- Apply stemming using Porter Stemmer
+
+### 3. Feature Extraction
+TF-IDF Vectorization converts text into numerical form for machine learning.
+
+### 4. Model Training
+Model used:
+
+**Multinomial Naive Bayes**
+
+### 5. Prediction
+User enters a news article → Model predicts whether it is **Fake** or **Real**
+
+---
+
+## 📊 Model Performance
+
+Accuracy achieved:
+
+```text
+95.18%
 ```
 
----
+Classification Metrics:
 
-## 📊 Results
-
-The model achieved approximately:
-
-**Accuracy: ~82.8%**
-
-This demonstrates reliable performance for headline-based fake news classification using classical machine learning methods.
+| Metric | Score |
+|---------|---------|
+| Precision | 95% |
+| Recall | 95% |
+| F1 Score | 95% |
 
 ---
 
-## 📁 Dataset
+## ▶️ Installation and Setup
 
-The dataset contains:
+Clone repository:
 
-* news headlines
-* metadata
-* label indicating whether news is real or fake
-
-
----
-
-## ▶️ How to Run the Project
-
-### 1️⃣ Install Dependencies
-
+```bash
+git clone https://github.com/deepthikds2006/Fake-News-Detection.git
 ```
+
+Move to project folder:
+
+```bash
+cd Fake-News-Detection
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Run Notebook
+Run Streamlit app:
 
-Open and run:
-
-```
-fake_news_detection.ipynb
+```bash
+streamlit run app.py
 ```
 
 ---
 
-## 🚀 Future Improvements
-- Hyperparameter tuning
-- Training on full article content
-- Deep learning models (LSTM, Transformers)
-- Web app deployment for real-time detection
+## 🖥 Application Interface
 
-## 💡 Learning Outcomes
-This project demonstrates practical understanding of:
-- NLP preprocessing
-- Feature engineering
-- Supervised learning algorithms
-- Model comparison
-- Performance evaluation
+Input: News article text  
 
+Output:
+- Fake probability
+- Real probability
+- Prediction result
+
+Example:
+
+```text
+Input:
+Breaking news article text...
+
+Output:
+Fake Probability: 10%
+Real Probability: 90%
+
+✅ REAL NEWS
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- Deploy using Streamlit Cloud
+- Add visualization dashboard
+- Use Deep Learning models (LSTM / BERT)
+- Improve UI design
+- Add live news checking support
+
+---
 
 ## 👩‍💻 Author
 
 **Deepthi**
 
----
 
-## ⭐ Project Purpose
-
-This project was developed as part of a self-learning journey in **Machine Learning and NLP** to strengthen practical skills for internships, research programs, and real-world applications.
- of self-learning journey in Machine Learning and NLP to strengthen practical skills for internships and placements.
